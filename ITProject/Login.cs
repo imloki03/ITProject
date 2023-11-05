@@ -20,17 +20,17 @@ namespace ITProject
         private void tb_username_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tb_username.Text))
-                lb_username.Visible = true;
+                tb_username.Visible = true;
             else
-                lb_username.Visible = false;
+                tb_username.Visible = false;
         }
 
         private void tb_password_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tb_password.Text))
-                lb_password.Visible = true;
+                tb_password.Visible = true;
             else
-                lb_password.Visible = false;
+                tb_password.Visible = false;
         }
 
         private void cb_showpass_CheckedChanged(object sender, EventArgs e)
