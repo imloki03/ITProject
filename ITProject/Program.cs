@@ -16,7 +16,32 @@ namespace ITProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            /*Login lg = new Login();
+            Employee_Class em = new Employee_Class();
+            if (lg.ShowDialog() == DialogResult.OK)
+            {
+                if (em.getEmjob(StaticVars_Class.emID) == "Employee")
+                {
+                    if (StaticVars_Class.state == StaticVars_Class.loginstate[0])
+                    {
+                        OverView overView = new OverView();
+                        Application.Run(overView);
+                    }
+                    else
+                    {
+                        WorkStation workStation = new WorkStation();
+                        Application.Run(workStation);
+                    }
+                }
+                else
+                {
+                    Manage manage = new Manage();
+                    Application.Run(manage);
+                }
+            }
+            else
+                Application.Exit();*/
+            Application.Run(new WorkStation());
         }
     }
 }

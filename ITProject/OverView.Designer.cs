@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.rb_female = new System.Windows.Forms.RadioButton();
             this.rb_male = new System.Windows.Forms.RadioButton();
@@ -41,27 +40,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pb_avatar = new System.Windows.Forms.PictureBox();
-            this.bt_workstation = new System.Windows.Forms.Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btn_Exit_ = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bt_changepass = new Guna.UI2.WinForms.Guna2Button();
-            this.bt_logout = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).BeginInit();
+            this.bt_workstation = new System.Windows.Forms.Button();
+            this.pb_avatar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 71);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -199,33 +189,6 @@
             this.label2.TabIndex = 32;
             this.label2.Text = "FullName:";
             // 
-            // pb_avatar
-            // 
-            this.pb_avatar.BackColor = System.Drawing.Color.Transparent;
-            this.pb_avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_avatar.Location = new System.Drawing.Point(58, 123);
-            this.pb_avatar.Name = "pb_avatar";
-            this.pb_avatar.Size = new System.Drawing.Size(100, 128);
-            this.pb_avatar.TabIndex = 31;
-            this.pb_avatar.TabStop = false;
-            // 
-            // bt_workstation
-            // 
-            this.bt_workstation.BackColor = System.Drawing.Color.Transparent;
-            this.bt_workstation.BackgroundImage = global::ITProject.Properties.Resources.bt_ws;
-            this.bt_workstation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_workstation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_workstation.FlatAppearance.BorderSize = 0;
-            this.bt_workstation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_workstation.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_workstation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_workstation.Location = new System.Drawing.Point(234, 284);
-            this.bt_workstation.Name = "bt_workstation";
-            this.bt_workstation.Size = new System.Drawing.Size(132, 44);
-            this.bt_workstation.TabIndex = 49;
-            this.bt_workstation.Text = "Work Station";
-            this.bt_workstation.UseVisualStyleBackColor = false;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
@@ -292,23 +255,44 @@
             this.bt_changepass.Size = new System.Drawing.Size(122, 32);
             this.bt_changepass.TabIndex = 51;
             this.bt_changepass.Text = "Change Password";
+            this.bt_changepass.Click += new System.EventHandler(this.bt_changepass_Click);
             // 
-            // bt_logout
+            // bt_workstation
             // 
-            this.bt_logout.AutoRoundedCorners = true;
-            this.bt_logout.BackColor = System.Drawing.Color.Transparent;
-            this.bt_logout.BorderRadius = 15;
-            this.bt_logout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_logout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_logout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_logout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_logout.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.bt_logout.ForeColor = System.Drawing.Color.White;
-            this.bt_logout.Location = new System.Drawing.Point(469, 84);
-            this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Size = new System.Drawing.Size(122, 32);
-            this.bt_logout.TabIndex = 52;
-            this.bt_logout.Text = "Logout";
+            this.bt_workstation.BackColor = System.Drawing.Color.Transparent;
+            this.bt_workstation.BackgroundImage = global::ITProject.Properties.Resources.bt_ws;
+            this.bt_workstation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_workstation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_workstation.FlatAppearance.BorderSize = 0;
+            this.bt_workstation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_workstation.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_workstation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_workstation.Location = new System.Drawing.Point(234, 284);
+            this.bt_workstation.Name = "bt_workstation";
+            this.bt_workstation.Size = new System.Drawing.Size(132, 44);
+            this.bt_workstation.TabIndex = 49;
+            this.bt_workstation.Text = "Work Station";
+            this.bt_workstation.UseVisualStyleBackColor = false;
+            this.bt_workstation.Click += new System.EventHandler(this.bt_workstation_Click);
+            // 
+            // pb_avatar
+            // 
+            this.pb_avatar.BackColor = System.Drawing.Color.Transparent;
+            this.pb_avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_avatar.Location = new System.Drawing.Point(58, 123);
+            this.pb_avatar.Name = "pb_avatar";
+            this.pb_avatar.Size = new System.Drawing.Size(100, 128);
+            this.pb_avatar.TabIndex = 31;
+            this.pb_avatar.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 71);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // OverView
             // 
@@ -317,7 +301,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(601, 363);
-            this.Controls.Add(this.bt_logout);
             this.Controls.Add(this.bt_changepass);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.bt_workstation);
@@ -338,9 +321,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OverView";
             this.Text = "OverView";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
+            this.Load += new System.EventHandler(this.OverView_Load);
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,6 +352,5 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit_;
         private Guna.UI2.WinForms.Guna2Button bt_changepass;
-        private Guna.UI2.WinForms.Guna2Button bt_logout;
     }
 }

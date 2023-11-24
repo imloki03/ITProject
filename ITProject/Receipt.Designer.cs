@@ -34,12 +34,12 @@
             this.lb_bilnumber = new System.Windows.Forms.Label();
             this.lb_cashier = new System.Windows.Forms.Label();
             this.dv_bill = new System.Windows.Forms.DataGridView();
-            this.lb_date = new System.Windows.Forms.Label();
+            this.lb_time = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb_table = new System.Windows.Forms.Label();
+            this.lb_payment = new System.Windows.Forms.Label();
             this.cb_payment = new System.Windows.Forms.ComboBox();
             this.bt_qrpay = new System.Windows.Forms.Button();
             this.pb_logo = new System.Windows.Forms.PictureBox();
@@ -125,16 +125,16 @@
             this.dv_bill.Size = new System.Drawing.Size(278, 204);
             this.dv_bill.TabIndex = 22;
             // 
-            // lb_date
+            // lb_time
             // 
-            this.lb_date.AutoSize = true;
-            this.lb_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_date.Location = new System.Drawing.Point(40, 156);
-            this.lb_date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_date.Name = "lb_date";
-            this.lb_date.Size = new System.Drawing.Size(36, 13);
-            this.lb_date.TabIndex = 21;
-            this.lb_date.Text = "Time: ";
+            this.lb_time.AutoSize = true;
+            this.lb_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_time.Location = new System.Drawing.Point(40, 156);
+            this.lb_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_time.Name = "lb_time";
+            this.lb_time.Size = new System.Drawing.Size(36, 13);
+            this.lb_time.TabIndex = 21;
+            this.lb_time.Text = "Time: ";
             // 
             // label3
             // 
@@ -169,23 +169,23 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "IT Project";
             // 
-            // label6
+            // lb_table
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(210, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Table:";
+            this.lb_table.AutoSize = true;
+            this.lb_table.Location = new System.Drawing.Point(210, 183);
+            this.lb_table.Name = "lb_table";
+            this.lb_table.Size = new System.Drawing.Size(37, 13);
+            this.lb_table.TabIndex = 30;
+            this.lb_table.Text = "Table:";
             // 
-            // label7
+            // lb_payment
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 237);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Payment:";
+            this.lb_payment.AutoSize = true;
+            this.lb_payment.Location = new System.Drawing.Point(40, 237);
+            this.lb_payment.Name = "lb_payment";
+            this.lb_payment.Size = new System.Drawing.Size(51, 13);
+            this.lb_payment.TabIndex = 31;
+            this.lb_payment.Text = "Payment:";
             // 
             // cb_payment
             // 
@@ -197,6 +197,7 @@
             this.cb_payment.Name = "cb_payment";
             this.cb_payment.Size = new System.Drawing.Size(86, 21);
             this.cb_payment.TabIndex = 32;
+            this.cb_payment.SelectedIndexChanged += new System.EventHandler(this.cb_payment_SelectedIndexChanged);
             // 
             // bt_qrpay
             // 
@@ -211,6 +212,7 @@
             this.bt_qrpay.Size = new System.Drawing.Size(40, 40);
             this.bt_qrpay.TabIndex = 29;
             this.bt_qrpay.UseVisualStyleBackColor = false;
+            this.bt_qrpay.Click += new System.EventHandler(this.bt_qrpay_Click);
             // 
             // pb_logo
             // 
@@ -268,6 +270,7 @@
             this.btn_Exit_.Name = "btn_Exit_";
             this.btn_Exit_.Size = new System.Drawing.Size(36, 23);
             this.btn_Exit_.TabIndex = 0;
+            this.btn_Exit_.Click += new System.EventHandler(this.btn_Exit__Click);
             // 
             // guna2ComboBox1
             // 
@@ -292,8 +295,8 @@
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.cb_payment);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lb_payment);
+            this.Controls.Add(this.lb_table);
             this.Controls.Add(this.bt_qrpay);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lb_money);
@@ -301,7 +304,7 @@
             this.Controls.Add(this.lb_bilnumber);
             this.Controls.Add(this.lb_cashier);
             this.Controls.Add(this.dv_bill);
-            this.Controls.Add(this.lb_date);
+            this.Controls.Add(this.lb_time);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -326,13 +329,13 @@
         private System.Windows.Forms.Label lb_bilnumber;
         private System.Windows.Forms.Label lb_cashier;
         private System.Windows.Forms.DataGridView dv_bill;
-        private System.Windows.Forms.Label lb_date;
+        private System.Windows.Forms.Label lb_time;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pb_logo;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_table;
+        private System.Windows.Forms.Label lb_payment;
         private System.Windows.Forms.ComboBox cb_payment;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;

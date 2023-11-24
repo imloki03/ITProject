@@ -30,6 +30,7 @@
         {
             this.pb_qr = new System.Windows.Forms.PictureBox();
             this.bt_cancel = new Guna.UI2.WinForms.Guna2Button();
+            this.lb_money = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_qr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,17 @@
             this.bt_cancel.Size = new System.Drawing.Size(118, 46);
             this.bt_cancel.TabIndex = 54;
             this.bt_cancel.Text = "Back";
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
+            // 
+            // lb_money
+            // 
+            this.lb_money.AutoSize = true;
+            this.lb_money.Location = new System.Drawing.Point(201, 396);
+            this.lb_money.Name = "lb_money";
+            this.lb_money.Size = new System.Drawing.Size(35, 13);
+            this.lb_money.TabIndex = 55;
+            this.lb_money.Text = "label1";
+            this.lb_money.Visible = false;
             // 
             // MomoQR
             // 
@@ -67,18 +79,22 @@
             this.BackgroundImage = global::ITProject.Properties.Resources.bgr_momo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(439, 536);
+            this.Controls.Add(this.lb_money);
             this.Controls.Add(this.bt_cancel);
             this.Controls.Add(this.pb_qr);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MomoQR";
             this.Text = "MomoQR";
+            this.Load += new System.EventHandler(this.MomoQR_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_qr)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox pb_qr;
         private Guna.UI2.WinForms.Guna2Button bt_cancel;
+        public System.Windows.Forms.Label lb_money;
     }
 }

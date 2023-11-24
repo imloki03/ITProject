@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pn_1 = new System.Windows.Forms.Panel();
             this.cus1_4 = new System.Windows.Forms.PictureBox();
             this.cus1_3 = new System.Windows.Forms.PictureBox();
@@ -80,7 +81,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pn_6 = new System.Windows.Forms.Panel();
             this.cus6_4 = new System.Windows.Forms.PictureBox();
-            this.cust6_3 = new System.Windows.Forms.PictureBox();
+            this.cus6_3 = new System.Windows.Forms.PictureBox();
             this.cus6_6 = new System.Windows.Forms.PictureBox();
             this.cus6_5 = new System.Windows.Forms.PictureBox();
             this.cus6_2 = new System.Windows.Forms.PictureBox();
@@ -127,7 +128,10 @@
             this.cus9_1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.bt_back = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.option = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.newOrder = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportReceipt = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeTable = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cus1_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus1_3)).BeginInit();
@@ -172,7 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cus7_1)).BeginInit();
             this.pn_6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cust6_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cus6_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_2)).BeginInit();
@@ -212,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cus9_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus9_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus9_1)).BeginInit();
+            this.option.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_1
@@ -231,6 +236,8 @@
             this.pn_1.Name = "pn_1";
             this.pn_1.Size = new System.Drawing.Size(213, 149);
             this.pn_1.TabIndex = 1;
+            this.pn_1.Click += new System.EventHandler(this.pn_Click);
+            this.pn_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus1_4
             // 
@@ -347,6 +354,8 @@
             this.pn_2.Name = "pn_2";
             this.pn_2.Size = new System.Drawing.Size(213, 149);
             this.pn_2.TabIndex = 33;
+            this.pn_2.Click += new System.EventHandler(this.pn_Click);
+            this.pn_2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus2_4
             // 
@@ -443,6 +452,8 @@
             this.pn_4.Name = "pn_4";
             this.pn_4.Size = new System.Drawing.Size(213, 149);
             this.pn_4.TabIndex = 35;
+            this.pn_4.Click += new System.EventHandler(this.pn_Click);
+            this.pn_4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus4_4
             // 
@@ -539,6 +550,8 @@
             this.pn_3.Name = "pn_3";
             this.pn_3.Size = new System.Drawing.Size(213, 149);
             this.pn_3.TabIndex = 34;
+            this.pn_3.Click += new System.EventHandler(this.pn_Click);
+            this.pn_3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus3_4
             // 
@@ -635,6 +648,8 @@
             this.pn_8.Name = "pn_8";
             this.pn_8.Size = new System.Drawing.Size(213, 149);
             this.pn_8.TabIndex = 39;
+            this.pn_8.Click += new System.EventHandler(this.pn_Click);
+            this.pn_8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus8_4
             // 
@@ -731,6 +746,8 @@
             this.pn_7.Name = "pn_7";
             this.pn_7.Size = new System.Drawing.Size(213, 149);
             this.pn_7.TabIndex = 38;
+            this.pn_7.Click += new System.EventHandler(this.pn_Click);
+            this.pn_7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus7_4
             // 
@@ -817,7 +834,7 @@
             this.pn_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pn_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pn_6.Controls.Add(this.cus6_4);
-            this.pn_6.Controls.Add(this.cust6_3);
+            this.pn_6.Controls.Add(this.cus6_3);
             this.pn_6.Controls.Add(this.cus6_6);
             this.pn_6.Controls.Add(this.cus6_5);
             this.pn_6.Controls.Add(this.cus6_2);
@@ -827,6 +844,8 @@
             this.pn_6.Name = "pn_6";
             this.pn_6.Size = new System.Drawing.Size(213, 149);
             this.pn_6.TabIndex = 37;
+            this.pn_6.Click += new System.EventHandler(this.pn_Click);
+            this.pn_6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus6_4
             // 
@@ -839,16 +858,16 @@
             this.cus6_4.TabIndex = 32;
             this.cus6_4.TabStop = false;
             // 
-            // cust6_3
+            // cus6_3
             // 
-            this.cust6_3.BackColor = System.Drawing.Color.Transparent;
-            this.cust6_3.BackgroundImage = global::ITProject.Properties.Resources.reddot;
-            this.cust6_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cust6_3.Location = new System.Drawing.Point(74, 106);
-            this.cust6_3.Name = "cust6_3";
-            this.cust6_3.Size = new System.Drawing.Size(16, 16);
-            this.cust6_3.TabIndex = 31;
-            this.cust6_3.TabStop = false;
+            this.cus6_3.BackColor = System.Drawing.Color.Transparent;
+            this.cus6_3.BackgroundImage = global::ITProject.Properties.Resources.reddot;
+            this.cus6_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cus6_3.Location = new System.Drawing.Point(74, 106);
+            this.cus6_3.Name = "cus6_3";
+            this.cus6_3.Size = new System.Drawing.Size(16, 16);
+            this.cus6_3.TabIndex = 31;
+            this.cus6_3.TabStop = false;
             // 
             // cus6_6
             // 
@@ -923,6 +942,8 @@
             this.pn_5.Name = "pn_5";
             this.pn_5.Size = new System.Drawing.Size(213, 149);
             this.pn_5.TabIndex = 36;
+            this.pn_5.Click += new System.EventHandler(this.pn_Click);
+            this.pn_5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus5_4
             // 
@@ -1019,6 +1040,8 @@
             this.pn_12.Name = "pn_12";
             this.pn_12.Size = new System.Drawing.Size(213, 149);
             this.pn_12.TabIndex = 43;
+            this.pn_12.Click += new System.EventHandler(this.pn_Click);
+            this.pn_12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus12_4
             // 
@@ -1115,6 +1138,8 @@
             this.pn_11.Name = "pn_11";
             this.pn_11.Size = new System.Drawing.Size(213, 149);
             this.pn_11.TabIndex = 42;
+            this.pn_11.Click += new System.EventHandler(this.pn_Click);
+            this.pn_11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus11_4
             // 
@@ -1211,6 +1236,8 @@
             this.pn_10.Name = "pn_10";
             this.pn_10.Size = new System.Drawing.Size(213, 149);
             this.pn_10.TabIndex = 41;
+            this.pn_10.Click += new System.EventHandler(this.pn_Click);
+            this.pn_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus10_4
             // 
@@ -1307,6 +1334,8 @@
             this.pn_9.Name = "pn_9";
             this.pn_9.Size = new System.Drawing.Size(213, 149);
             this.pn_9.TabIndex = 40;
+            this.pn_9.Click += new System.EventHandler(this.pn_Click);
+            this.pn_9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_MouseDown);
             // 
             // cus9_4
             // 
@@ -1402,16 +1431,36 @@
             this.bt_back.TabIndex = 50;
             this.bt_back.Text = "<< Back";
             this.bt_back.UseVisualStyleBackColor = false;
+            this.bt_back.Click += new System.EventHandler(this.bt_back_Click);
             // 
-            // label13
+            // option
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(70, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(243, 20);
-            this.label13.TabIndex = 51;
-            this.label13.Text = "Một vài thống kê tổng quan ở đây";
+            this.option.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.option.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newOrder,
+            this.exportReceipt,
+            this.removeTable});
+            this.option.Name = "option";
+            this.option.Size = new System.Drawing.Size(151, 70);
+            this.option.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.option_ItemClicked);
+            // 
+            // newOrder
+            // 
+            this.newOrder.Name = "newOrder";
+            this.newOrder.Size = new System.Drawing.Size(150, 22);
+            this.newOrder.Text = "New Order";
+            // 
+            // exportReceipt
+            // 
+            this.exportReceipt.Name = "exportReceipt";
+            this.exportReceipt.Size = new System.Drawing.Size(150, 22);
+            this.exportReceipt.Text = "Export Receipt";
+            // 
+            // removeTable
+            // 
+            this.removeTable.Name = "removeTable";
+            this.removeTable.Size = new System.Drawing.Size(150, 22);
+            this.removeTable.Text = "Remove Table";
             // 
             // WorkStation
             // 
@@ -1420,7 +1469,6 @@
             this.BackgroundImage = global::ITProject.Properties.Resources.brg_ws;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 681);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.bt_back);
             this.Controls.Add(this.pn_12);
             this.Controls.Add(this.pn_11);
@@ -1439,6 +1487,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WorkStation";
             this.Text = "WorkStation";
+            this.Load += new System.EventHandler(this.WorkStation_Load);
             this.pn_1.ResumeLayout(false);
             this.pn_1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cus1_4)).EndInit();
@@ -1490,7 +1539,7 @@
             this.pn_6.ResumeLayout(false);
             this.pn_6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cust6_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cus6_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus6_2)).EndInit();
@@ -1535,6 +1584,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cus9_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus9_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cus9_1)).EndInit();
+            this.option.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1594,7 +1644,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pn_6;
         private System.Windows.Forms.PictureBox cus6_4;
-        private System.Windows.Forms.PictureBox cust6_3;
+        private System.Windows.Forms.PictureBox cus6_3;
         private System.Windows.Forms.PictureBox cus6_6;
         private System.Windows.Forms.PictureBox cus6_5;
         private System.Windows.Forms.PictureBox cus6_2;
@@ -1641,6 +1691,9 @@
         private System.Windows.Forms.PictureBox cus9_1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button bt_back;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ContextMenuStrip option;
+        private System.Windows.Forms.ToolStripMenuItem newOrder;
+        private System.Windows.Forms.ToolStripMenuItem exportReceipt;
+        private System.Windows.Forms.ToolStripMenuItem removeTable;
     }
 }

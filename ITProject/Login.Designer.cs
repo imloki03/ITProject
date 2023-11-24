@@ -100,6 +100,7 @@
             this.bt_login.TabIndex = 16;
             this.bt_login.Text = "Login";
             this.bt_login.UseVisualStyleBackColor = false;
+            this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
             // label2
             // 
@@ -183,7 +184,7 @@
             this.tb_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_password.Location = new System.Drawing.Point(448, 235);
             this.tb_password.Name = "tb_password";
-            this.tb_password.PasswordChar = '\0';
+            this.tb_password.PasswordChar = '*';
             this.tb_password.PlaceholderText = "Password";
             this.tb_password.SelectedText = "";
             this.tb_password.Size = new System.Drawing.Size(200, 28);
