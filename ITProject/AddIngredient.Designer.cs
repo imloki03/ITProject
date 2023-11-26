@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddIngredient));
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tb_price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_unit = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.bt_cancel = new Guna.UI2.WinForms.Guna2Button();
@@ -40,55 +38,42 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb_amount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tb_quantity = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.bt_upload = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.pc_picture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(305, 130);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 23);
-            this.label10.TabIndex = 57;
-            this.label10.Text = "Picture:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(18, 226);
+            this.label9.Location = new System.Drawing.Point(18, 337);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 23);
+            this.label9.Size = new System.Drawing.Size(47, 23);
             this.label9.TabIndex = 56;
-            this.label9.Text = "Price:";
+            this.label9.Text = "Unit:";
             // 
-            // tb_price
+            // tb_unit
             // 
-            this.tb_price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_price.DefaultText = "";
-            this.tb_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tb_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tb_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_price.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tb_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_price.Location = new System.Drawing.Point(22, 253);
-            this.tb_price.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tb_price.Name = "tb_price";
-            this.tb_price.PasswordChar = '\0';
-            this.tb_price.PlaceholderText = "";
-            this.tb_price.SelectedText = "";
-            this.tb_price.Size = new System.Drawing.Size(233, 48);
-            this.tb_price.TabIndex = 55;
+            this.tb_unit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_unit.DefaultText = "";
+            this.tb_unit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_unit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_unit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_unit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_unit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_unit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tb_unit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_unit.Location = new System.Drawing.Point(22, 364);
+            this.tb_unit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_unit.Name = "tb_unit";
+            this.tb_unit.PasswordChar = '\0';
+            this.tb_unit.PlaceholderText = "";
+            this.tb_unit.SelectedText = "";
+            this.tb_unit.Size = new System.Drawing.Size(370, 48);
+            this.tb_unit.TabIndex = 55;
             // 
             // label2
             // 
@@ -117,7 +102,7 @@
             this.tb_name.PasswordChar = '\0';
             this.tb_name.PlaceholderText = "";
             this.tb_name.SelectedText = "";
-            this.tb_name.Size = new System.Drawing.Size(233, 48);
+            this.tb_name.Size = new System.Drawing.Size(370, 48);
             this.tb_name.TabIndex = 53;
             // 
             // bt_cancel
@@ -133,11 +118,12 @@
             this.bt_cancel.FillColor = System.Drawing.Color.Gray;
             this.bt_cancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bt_cancel.ForeColor = System.Drawing.Color.White;
-            this.bt_cancel.Location = new System.Drawing.Point(223, 16);
+            this.bt_cancel.Location = new System.Drawing.Point(6, 16);
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.Size = new System.Drawing.Size(180, 53);
             this.bt_cancel.TabIndex = 1;
             this.bt_cancel.Text = "CANCEL";
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
             // bt_add
             // 
@@ -152,11 +138,12 @@
             this.bt_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.bt_add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bt_add.ForeColor = System.Drawing.Color.White;
-            this.bt_add.Location = new System.Drawing.Point(429, 16);
+            this.bt_add.Location = new System.Drawing.Point(212, 16);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(180, 53);
             this.bt_add.TabIndex = 0;
             this.bt_add.Text = "ADD";
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
             // 
             // guna2Panel2
             // 
@@ -164,9 +151,9 @@
             this.guna2Panel2.Controls.Add(this.bt_add);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 501);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 441);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(639, 81);
+            this.guna2Panel2.Size = new System.Drawing.Size(416, 81);
             this.guna2Panel2.TabIndex = 52;
             // 
             // label1
@@ -189,38 +176,38 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(639, 114);
+            this.guna2Panel1.Size = new System.Drawing.Size(416, 114);
             this.guna2Panel1.TabIndex = 51;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(18, 324);
+            this.label3.Location = new System.Drawing.Point(18, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 23);
+            this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 61;
-            this.label3.Text = "Amount:";
+            this.label3.Text = "Quantity:";
             // 
-            // tb_amount
+            // tb_quantity
             // 
-            this.tb_amount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_amount.DefaultText = "";
-            this.tb_amount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tb_amount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tb_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tb_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_amount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tb_amount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_amount.Location = new System.Drawing.Point(22, 351);
-            this.tb_amount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tb_amount.Name = "tb_amount";
-            this.tb_amount.PasswordChar = '\0';
-            this.tb_amount.PlaceholderText = "";
-            this.tb_amount.SelectedText = "";
-            this.tb_amount.Size = new System.Drawing.Size(233, 48);
-            this.tb_amount.TabIndex = 60;
+            this.tb_quantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_quantity.DefaultText = "";
+            this.tb_quantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tb_quantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tb_quantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_quantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tb_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tb_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tb_quantity.Location = new System.Drawing.Point(22, 262);
+            this.tb_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_quantity.Name = "tb_quantity";
+            this.tb_quantity.PasswordChar = '\0';
+            this.tb_quantity.PlaceholderText = "";
+            this.tb_quantity.SelectedText = "";
+            this.tb_quantity.Size = new System.Drawing.Size(370, 48);
+            this.tb_quantity.TabIndex = 60;
             // 
             // guna2PictureBox1
             // 
@@ -235,51 +222,20 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // bt_upload
-            // 
-            this.bt_upload.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bt_upload.HoverState.ImageSize = new System.Drawing.Size(57, 57);
-            this.bt_upload.Image = ((System.Drawing.Image)(resources.GetObject("bt_upload.Image")));
-            this.bt_upload.ImageOffset = new System.Drawing.Point(0, 0);
-            this.bt_upload.ImageRotate = 0F;
-            this.bt_upload.ImageSize = new System.Drawing.Size(55, 55);
-            this.bt_upload.Location = new System.Drawing.Point(429, 378);
-            this.bt_upload.Name = "bt_upload";
-            this.bt_upload.PressedState.ImageSize = new System.Drawing.Size(55, 55);
-            this.bt_upload.Size = new System.Drawing.Size(64, 54);
-            this.bt_upload.TabIndex = 59;
-            // 
-            // pc_picture
-            // 
-            this.pc_picture.BackColor = System.Drawing.Color.Transparent;
-            this.pc_picture.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.pc_picture.Image = global::ITProject.Properties.Resources.food__1_;
-            this.pc_picture.ImageRotate = 0F;
-            this.pc_picture.Location = new System.Drawing.Point(309, 160);
-            this.pc_picture.Name = "pc_picture";
-            this.pc_picture.Size = new System.Drawing.Size(300, 200);
-            this.pc_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_picture.TabIndex = 58;
-            this.pc_picture.TabStop = false;
-            this.pc_picture.UseTransparentBackground = true;
-            // 
             // AddIngredient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(639, 582);
-            this.Controls.Add(this.label10);
+            this.ClientSize = new System.Drawing.Size(416, 522);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.tb_price);
+            this.Controls.Add(this.tb_unit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_name);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_amount);
-            this.Controls.Add(this.bt_upload);
-            this.Controls.Add(this.pc_picture);
+            this.Controls.Add(this.tb_quantity);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -290,17 +246,14 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox tb_price;
+        private Guna.UI2.WinForms.Guna2TextBox tb_unit;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox tb_name;
         private Guna.UI2.WinForms.Guna2Button bt_cancel;
@@ -310,8 +263,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox tb_amount;
-        private Guna.UI2.WinForms.Guna2ImageButton bt_upload;
-        private Guna.UI2.WinForms.Guna2PictureBox pc_picture;
+        private Guna.UI2.WinForms.Guna2TextBox tb_quantity;
     }
 }

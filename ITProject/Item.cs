@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace ManageRestaurant
 {
@@ -48,6 +49,12 @@ namespace ManageRestaurant
         private void Item_Click(object sender, EventArgs e)
         {
             OnUserControlClicked();
+        }
+        public void SetData(string name, Image picture, int cost)
+        {
+            lb_name.Text = name;
+            BackgroundImage = picture;
+            lb_price.Text = cost.ToString();
         }
     }
 }

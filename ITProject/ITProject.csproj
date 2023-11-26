@@ -33,16 +33,66 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV, Version=4.8.1.5350, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\Emgu.CV.4.8.1.5350\lib\netstandard2.0\Emgu.CV.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.0\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +106,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDishes.Designer.cs">
+      <DependentUpon>AddDishes.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddIngredient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,17 +124,37 @@
     <Compile Include="AddNewAccount.Designer.cs">
       <DependentUpon>AddNewAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bestseller_static.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bestseller_static.Designer.cs">
+      <DependentUpon>Bestseller_static.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard_Class.cs" />
+    <Compile Include="Dishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dishes.Designer.cs">
+      <DependentUpon>Dishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dishes_class.cs" />
     <Compile Include="EditAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditAccount.Designer.cs">
       <DependentUpon>EditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDish.Designer.cs">
+      <DependentUpon>EditDish.cs</DependentUpon>
     </Compile>
     <Compile Include="EditIngredient.cs">
       <SubType>Form</SubType>
@@ -86,12 +162,14 @@
     <Compile Include="EditIngredient.Designer.cs">
       <DependentUpon>EditIngredient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee_Class.cs" />
     <Compile Include="Ingredient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ingredient.Designer.cs">
       <DependentUpon>Ingredient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingredient_class.cs" />
     <Compile Include="Item.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +182,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login_Class.cs" />
     <Compile Include="Manage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,12 +208,19 @@
     <Compile Include="Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order_static.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_static.Designer.cs">
+      <DependentUpon>Order_static.cs</DependentUpon>
+    </Compile>
     <Compile Include="OverView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OverView.Designer.cs">
       <DependentUpon>OverView.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB_Class.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receipt.cs">
@@ -143,29 +229,55 @@
     <Compile Include="Receipt.Designer.cs">
       <DependentUpon>Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Revenue_static.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revenue_static.Designer.cs">
+      <DependentUpon>Revenue_static.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectDishes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SelectDishes.Designer.cs">
       <DependentUpon>SelectDishes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statics.Designer.cs">
+      <DependentUpon>Statics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statics_Class.cs" />
+    <Compile Include="StaticVars_Class.cs" />
     <Compile Include="WorkStation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WorkStation.Designer.cs">
       <DependentUpon>WorkStation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddDishes.resx">
+      <DependentUpon>AddDishes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddIngredient.resx">
       <DependentUpon>AddIngredient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewAccount.resx">
       <DependentUpon>AddNewAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bestseller_static.resx">
+      <DependentUpon>Bestseller_static.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dishes.resx">
+      <DependentUpon>Dishes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditAccount.resx">
       <DependentUpon>EditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDish.resx">
+      <DependentUpon>EditDish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditIngredient.resx">
       <DependentUpon>EditIngredient.cs</DependentUpon>
@@ -191,6 +303,9 @@
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Order_static.resx">
+      <DependentUpon>Order_static.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OverView.resx">
       <DependentUpon>OverView.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,8 +322,14 @@
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Revenue_static.resx">
+      <DependentUpon>Revenue_static.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectDishes.resx">
       <DependentUpon>SelectDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statics.resx">
+      <DependentUpon>Statics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkStation.resx">
       <DependentUpon>WorkStation.cs</DependentUpon>
@@ -244,6 +365,10 @@
     <Content Include="Picture\reddot.png" />
     <Content Include="Picture\table.png" />
     <Content Include="Picture\usericon.png" />
+    <None Include="Resources\Group 90 %281%29.png" />
+    <None Include="Resources\Group 90.png" />
+    <None Include="Resources\food %282%291.png" />
+    <None Include="Resources\food %282%29.png" />
     <None Include="Resources\grocery1.png" />
     <None Include="Resources\profile1.png" />
     <None Include="Resources\employee %281%29.png" />

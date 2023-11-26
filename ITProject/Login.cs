@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsRestaurant;
 
 namespace ITProject
 {
@@ -39,6 +40,19 @@ namespace ITProject
                 tb_password.PasswordChar = '\0';
             else
                 tb_password.PasswordChar = '*';
+        }
+
+        private void bt_login_Click(object sender, EventArgs e)
+        {
+            Login_Class login = new Login_Class();
+            string user = tb_username.Text;
+            string password = tb_password.Text;
+            if (login.checklogin(user, password))
+            {
+                this.DialogResult = DialogResult.OK;
+            }
+            else
+                MessageBox.Show("Ivalid Username or Password", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

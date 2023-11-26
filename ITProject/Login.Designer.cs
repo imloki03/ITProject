@@ -49,8 +49,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 500);
+            this.pictureBox1.Size = new System.Drawing.Size(467, 615);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -59,9 +60,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(477, 124);
+            this.label1.Location = new System.Drawing.Point(636, 153);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 40);
+            this.label1.Size = new System.Drawing.Size(143, 51);
             this.label1.TabIndex = 2;
             this.label1.Text = "Login";
             // 
@@ -69,9 +71,10 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::ITProject.Properties.Resources.passicon;
-            this.pictureBox4.Location = new System.Drawing.Point(417, 241);
+            this.pictureBox4.Location = new System.Drawing.Point(556, 297);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 20);
+            this.pictureBox4.Size = new System.Drawing.Size(29, 25);
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
@@ -79,9 +82,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::ITProject.Properties.Resources.usericon;
-            this.pictureBox3.Location = new System.Drawing.Point(417, 197);
+            this.pictureBox3.Location = new System.Drawing.Point(556, 242);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 22);
+            this.pictureBox3.Size = new System.Drawing.Size(27, 27);
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
@@ -94,20 +98,23 @@
             this.bt_login.FlatAppearance.BorderSize = 0;
             this.bt_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_login.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_login.Location = new System.Drawing.Point(439, 303);
+            this.bt_login.Location = new System.Drawing.Point(585, 373);
+            this.bt_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt_login.Name = "bt_login";
-            this.bt_login.Size = new System.Drawing.Size(190, 40);
+            this.bt_login.Size = new System.Drawing.Size(253, 49);
             this.bt_login.TabIndex = 16;
             this.bt_login.Text = "Login";
             this.bt_login.UseVisualStyleBackColor = false;
+            this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(357, 464);
+            this.label2.Location = new System.Drawing.Point(476, 571);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 26);
+            this.label2.Size = new System.Drawing.Size(169, 32);
             this.label2.TabIndex = 17;
             this.label2.Text = "21110306 - Nguyễn Văn Thi\r\n21110356 - Trần Đức Vinh\r\n";
             // 
@@ -115,9 +122,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(562, 477);
+            this.label3.Location = new System.Drawing.Point(749, 587);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 13);
+            this.label3.Size = new System.Drawing.Size(162, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Đồ án Công nghệ thông tin";
             // 
@@ -126,9 +134,10 @@
             this.cb_showpass.AutoSize = true;
             this.cb_showpass.BackColor = System.Drawing.Color.Transparent;
             this.cb_showpass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_showpass.Location = new System.Drawing.Point(447, 269);
+            this.cb_showpass.Location = new System.Drawing.Point(596, 331);
+            this.cb_showpass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_showpass.Name = "cb_showpass";
-            this.cb_showpass.Size = new System.Drawing.Size(119, 21);
+            this.cb_showpass.Size = new System.Drawing.Size(149, 27);
             this.cb_showpass.TabIndex = 19;
             this.cb_showpass.Text = "Show password";
             this.cb_showpass.UseVisualStyleBackColor = false;
@@ -140,16 +149,17 @@
             this.btn_Exit_.BackColor = System.Drawing.Color.DarkGray;
             this.btn_Exit_.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_Exit_.IconColor = System.Drawing.Color.White;
-            this.btn_Exit_.Location = new System.Drawing.Point(649, 5);
+            this.btn_Exit_.Location = new System.Drawing.Point(865, 6);
+            this.btn_Exit_.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Exit_.Name = "btn_Exit_";
-            this.btn_Exit_.Size = new System.Drawing.Size(45, 29);
+            this.btn_Exit_.Size = new System.Drawing.Size(60, 36);
             this.btn_Exit_.TabIndex = 20;
             // 
             // tb_username
             // 
             this.tb_username.AutoRoundedCorners = true;
             this.tb_username.BackColor = System.Drawing.Color.Transparent;
-            this.tb_username.BorderRadius = 13;
+            this.tb_username.BorderRadius = 16;
             this.tb_username.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_username.DefaultText = "";
             this.tb_username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -159,19 +169,20 @@
             this.tb_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_username.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_username.Location = new System.Drawing.Point(448, 194);
+            this.tb_username.Location = new System.Drawing.Point(597, 239);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_username.Name = "tb_username";
             this.tb_username.PasswordChar = '\0';
             this.tb_username.PlaceholderText = "Username";
             this.tb_username.SelectedText = "";
-            this.tb_username.Size = new System.Drawing.Size(200, 28);
+            this.tb_username.Size = new System.Drawing.Size(267, 34);
             this.tb_username.TabIndex = 21;
             // 
             // tb_password
             // 
             this.tb_password.AutoRoundedCorners = true;
             this.tb_password.BackColor = System.Drawing.Color.Transparent;
-            this.tb_password.BorderRadius = 13;
+            this.tb_password.BorderRadius = 16;
             this.tb_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_password.DefaultText = "";
             this.tb_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -181,21 +192,22 @@
             this.tb_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_password.Location = new System.Drawing.Point(448, 235);
+            this.tb_password.Location = new System.Drawing.Point(597, 289);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_password.Name = "tb_password";
             this.tb_password.PasswordChar = '\0';
             this.tb_password.PlaceholderText = "Password";
             this.tb_password.SelectedText = "";
-            this.tb_password.Size = new System.Drawing.Size(200, 28);
+            this.tb_password.Size = new System.Drawing.Size(267, 34);
             this.tb_password.TabIndex = 22;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::ITProject.Properties.Resources.login_backgr;
-            this.ClientSize = new System.Drawing.Size(700, 500);
+            this.ClientSize = new System.Drawing.Size(933, 615);
             this.Controls.Add(this.tb_password);
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.btn_Exit_);
@@ -209,6 +221,7 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

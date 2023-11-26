@@ -52,13 +52,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rb_female = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.bt_upload = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pc_picture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -140,6 +140,7 @@
             this.cb_district.Name = "cb_district";
             this.cb_district.Size = new System.Drawing.Size(233, 31);
             this.cb_district.TabIndex = 40;
+            this.cb_district.SelectedIndexChanged += new System.EventHandler(this.cb_district_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -160,6 +161,8 @@
             this.cb_province.Name = "cb_province";
             this.cb_province.Size = new System.Drawing.Size(233, 31);
             this.cb_province.TabIndex = 38;
+            this.cb_province.SelectedIndexChanged += new System.EventHandler(this.cb_province_SelectedIndexChanged);
+            this.cb_province.Click += new System.EventHandler(this.cb_province_Click);
             // 
             // dt_birthday
             // 
@@ -290,6 +293,7 @@
             this.bt_cancel.Size = new System.Drawing.Size(180, 53);
             this.bt_cancel.TabIndex = 1;
             this.bt_cancel.Text = "CANCEL";
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
             // bt_add
             // 
@@ -309,6 +313,7 @@
             this.bt_add.Size = new System.Drawing.Size(180, 53);
             this.bt_add.TabIndex = 0;
             this.bt_add.Text = "ADD";
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
             // 
             // guna2Panel2
             // 
@@ -362,6 +367,19 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1121, 114);
             this.guna2Panel1.TabIndex = 27;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::ITProject.Properties.Resources.employee;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 21);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(90, 77);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // bt_upload
             // 
             this.bt_upload.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -375,6 +393,7 @@
             this.bt_upload.PressedState.ImageSize = new System.Drawing.Size(55, 55);
             this.bt_upload.Size = new System.Drawing.Size(64, 54);
             this.bt_upload.TabIndex = 48;
+            this.bt_upload.Click += new System.EventHandler(this.bt_upload_Click);
             // 
             // pc_picture
             // 
@@ -389,19 +408,6 @@
             this.pc_picture.TabIndex = 47;
             this.pc_picture.TabStop = false;
             this.pc_picture.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::ITProject.Properties.Resources.employee;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 21);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(90, 77);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // AddNewAccount
             // 
@@ -437,11 +443,12 @@
             this.Name = "AddNewAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNewAccount";
+            this.Load += new System.EventHandler(this.AddNewAccount_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

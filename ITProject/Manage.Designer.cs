@@ -36,6 +36,7 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btn_Exit_ = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.bt_dishes = new Guna.UI2.WinForms.Guna2Button();
             this.bt_statistics = new Guna.UI2.WinForms.Guna2Button();
             this.bt_ManageAccount = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Dashboard = new Guna.UI2.WinForms.Guna2Button();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.bt_dishes);
             this.panel1.Controls.Add(this.bt_statistics);
             this.panel1.Controls.Add(this.bt_ManageAccount);
             this.panel1.Controls.Add(this.bt_Dashboard);
@@ -134,6 +136,36 @@
             this.btn_Exit_.Name = "btn_Exit_";
             this.btn_Exit_.Size = new System.Drawing.Size(45, 29);
             this.btn_Exit_.TabIndex = 0;
+            this.btn_Exit_.Click += new System.EventHandler(this.btn_Exit__Click);
+            // 
+            // bt_dishes
+            // 
+            this.bt_dishes.AutoRoundedCorners = true;
+            this.bt_dishes.BorderRadius = 29;
+            this.bt_dishes.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.bt_dishes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.bt_dishes.CheckedState.Image = global::ITProject.Properties.Resources.Group_90__1_;
+            this.bt_dishes.CustomizableEdges.BottomRight = false;
+            this.bt_dishes.CustomizableEdges.TopRight = false;
+            this.bt_dishes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bt_dishes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bt_dishes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bt_dishes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_dishes.FillColor = System.Drawing.Color.Transparent;
+            this.bt_dishes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_dishes.ForeColor = System.Drawing.Color.White;
+            this.bt_dishes.Image = global::ITProject.Properties.Resources.Group_90;
+            this.bt_dishes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bt_dishes.ImageOffset = new System.Drawing.Point(10, 0);
+            this.bt_dishes.ImageSize = new System.Drawing.Size(26, 26);
+            this.bt_dishes.Location = new System.Drawing.Point(49, 362);
+            this.bt_dishes.Name = "bt_dishes";
+            this.bt_dishes.Size = new System.Drawing.Size(203, 61);
+            this.bt_dishes.TabIndex = 6;
+            this.bt_dishes.Text = "Dishes";
+            this.bt_dishes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bt_dishes.TextOffset = new System.Drawing.Point(16, 0);
+            this.bt_dishes.Click += new System.EventHandler(this.bt_dishes_Click);
             // 
             // bt_statistics
             // 
@@ -155,13 +187,14 @@
             this.bt_statistics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_statistics.ImageOffset = new System.Drawing.Point(10, 0);
             this.bt_statistics.ImageSize = new System.Drawing.Size(26, 26);
-            this.bt_statistics.Location = new System.Drawing.Point(49, 550);
+            this.bt_statistics.Location = new System.Drawing.Point(49, 600);
             this.bt_statistics.Name = "bt_statistics";
             this.bt_statistics.Size = new System.Drawing.Size(203, 61);
             this.bt_statistics.TabIndex = 5;
             this.bt_statistics.Text = "Statistics";
             this.bt_statistics.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_statistics.TextOffset = new System.Drawing.Point(17, 0);
+            this.bt_statistics.Click += new System.EventHandler(this.bt_statistics_Click);
             // 
             // bt_ManageAccount
             // 
@@ -183,13 +216,14 @@
             this.bt_ManageAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_ManageAccount.ImageOffset = new System.Drawing.Point(10, 0);
             this.bt_ManageAccount.ImageSize = new System.Drawing.Size(26, 26);
-            this.bt_ManageAccount.Location = new System.Drawing.Point(49, 459);
+            this.bt_ManageAccount.Location = new System.Drawing.Point(49, 520);
             this.bt_ManageAccount.Name = "bt_ManageAccount";
             this.bt_ManageAccount.Size = new System.Drawing.Size(203, 61);
             this.bt_ManageAccount.TabIndex = 4;
             this.bt_ManageAccount.Text = "Account";
             this.bt_ManageAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_ManageAccount.TextOffset = new System.Drawing.Point(17, 0);
+            this.bt_ManageAccount.Click += new System.EventHandler(this.bt_ManageAccount_Click);
             // 
             // bt_Dashboard
             // 
@@ -211,13 +245,14 @@
             this.bt_Dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_Dashboard.ImageOffset = new System.Drawing.Point(10, 0);
             this.bt_Dashboard.ImageSize = new System.Drawing.Size(26, 26);
-            this.bt_Dashboard.Location = new System.Drawing.Point(49, 299);
+            this.bt_Dashboard.Location = new System.Drawing.Point(49, 281);
             this.bt_Dashboard.Name = "bt_Dashboard";
             this.bt_Dashboard.Size = new System.Drawing.Size(203, 61);
             this.bt_Dashboard.TabIndex = 3;
             this.bt_Dashboard.Text = "Dashboard";
             this.bt_Dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_Dashboard.TextOffset = new System.Drawing.Point(16, 0);
+            this.bt_Dashboard.Click += new System.EventHandler(this.bt_Dashboard_Click);
             // 
             // bt_Ingredient
             // 
@@ -239,13 +274,14 @@
             this.bt_Ingredient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_Ingredient.ImageOffset = new System.Drawing.Point(9, 0);
             this.bt_Ingredient.ImageSize = new System.Drawing.Size(22, 22);
-            this.bt_Ingredient.Location = new System.Drawing.Point(49, 376);
+            this.bt_Ingredient.Location = new System.Drawing.Point(49, 441);
             this.bt_Ingredient.Name = "bt_Ingredient";
             this.bt_Ingredient.Size = new System.Drawing.Size(203, 61);
             this.bt_Ingredient.TabIndex = 2;
             this.bt_Ingredient.Text = "Ingredient";
             this.bt_Ingredient.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_Ingredient.TextOffset = new System.Drawing.Point(20, 0);
+            this.bt_Ingredient.Click += new System.EventHandler(this.bt_Ingredient_Click);
             // 
             // guna2PictureBox1
             // 
@@ -274,6 +310,7 @@
             this.Name = "Manage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage";
+            this.Load += new System.EventHandler(this.Manage_Load);
             this.panel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -297,5 +334,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox btn_Exit_;
+        private Guna.UI2.WinForms.Guna2Button bt_dishes;
     }
 }
