@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Emgu.CV.ML;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,12 +24,27 @@ public class District
     public string Name { get; set; }
     public int ProvinceId { get; set; }
 }
+public class ProvinceResponse
+{
+    [JsonProperty("name")]
+    public string Name { get; set; }
 
+    [JsonProperty("districts")]
+    public List<District> Districts { get; set; }
+}
 public class Ward
 {
     public int code { get; set; }
     public string Name { get; set; }
     public int DistrictId { get; set; }
+}
+public class DistrictResponse
+{
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("wards")]
+    public List<Ward> Wards { get; set; }
 }
 
 namespace WinFormsRestaurant
@@ -49,6 +66,59 @@ namespace WinFormsRestaurant
             return text;
         }
         static HttpClient client = new HttpClient();
+
+        public static async Task<List<Province>> GetProvincesAsync()
+        {
+            List<Province> provinces = new List<Province>();
+            HttpResponseMessage response = await client.GetAsync("https://provinces.open-api.vn/api/p/");
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                provinces = JsonConvert.DeserializeObject<List<Province>>(content);
+            }
+            foreach (Province province in provinces)
+            {
+                province.Name = RemoveVietnameseSigns(province.Name);
+            }
+            return provinces;
+        }
+
+        public static async Task<List<District>> GetDistrictsAsync(int provinceId)
+        {
+            List<District> districts = new List<District>();
+            HttpResponseMessage response = await client.GetAsync($"https://provinces.open-api.vn/api/p/{provinceId}/?depth=2");
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                ProvinceResponse provinceResponse = JsonConvert.DeserializeObject<ProvinceResponse>(content);
+                districts = provinceResponse.Districts;
+            }
+            foreach (District district in districts)
+            {
+                district.Name = RemoveVietnameseSigns(district.Name);
+            }
+            return districts;
+        }
+
+        public static async Task<List<Ward>> GetWardsAsync(int districtId)
+        {
+            List<Ward> wards = new List<Ward>();
+            HttpResponseMessage response = await client.GetAsync($"https://provinces.open-api.vn/api/d/{districtId}/?depth=2");
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                DistrictResponse districtResponse = JsonConvert.DeserializeObject<DistrictResponse>(content);
+                wards = districtResponse.Wards;
+            }
+            foreach (Ward ward in wards)
+            {
+                ward.Name = RemoveVietnameseSigns(ward.Name);
+            }
+            return wards;
+        }
 
         public void fillPanel(Panel panel, Form childform, int clear)
         {
