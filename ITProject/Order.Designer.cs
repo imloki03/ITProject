@@ -125,6 +125,7 @@
             this.bt_selectDishes.Size = new System.Drawing.Size(107, 35);
             this.bt_selectDishes.TabIndex = 17;
             this.bt_selectDishes.Text = "Select Dishes";
+            this.bt_selectDishes.Click += new System.EventHandler(this.bt_selectDishes_Click);
             // 
             // bt_cancel
             // 
@@ -142,6 +143,7 @@
             this.bt_cancel.Size = new System.Drawing.Size(83, 32);
             this.bt_cancel.TabIndex = 53;
             this.bt_cancel.Text = "Cancel";
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
             // bt_order
             // 
@@ -159,6 +161,7 @@
             this.bt_order.Size = new System.Drawing.Size(83, 32);
             this.bt_order.TabIndex = 54;
             this.bt_order.Text = "Order";
+            this.bt_order.Click += new System.EventHandler(this.bt_order_Click);
             // 
             // Order
             // 

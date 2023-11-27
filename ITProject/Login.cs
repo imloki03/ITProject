@@ -17,22 +17,7 @@ namespace ITProject
         {
             InitializeComponent();
         }
-
-        private void tb_username_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tb_username.Text))
-                tb_username.Visible = true;
-            else
-                tb_username.Visible = false;
-        }
-
-        private void tb_password_TextChanged(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(tb_password.Text))
-                tb_password.Visible = true;
-            else
-                tb_password.Visible = false;
-        }
+        Employee_Class em = new Employee_Class();
 
         private void cb_showpass_CheckedChanged(object sender, EventArgs e)
         {
@@ -49,6 +34,8 @@ namespace ITProject
             string password = tb_password.Text;
             if (login.checklogin(user, password))
             {
+                StaticVars_Class.username = user;
+                StaticVars_Class.emID = em.whatEmIDByAcc(user);
                 this.DialogResult = DialogResult.OK;
             }
             else

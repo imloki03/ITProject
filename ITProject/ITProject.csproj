@@ -129,6 +129,12 @@
     </Compile>
     <Compile Include="Bestseller_static.Designer.cs">
       <DependentUpon>Bestseller_static.cs</DependentUpon>
+    <Compile Include="Bill_Class.cs" />
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -144,6 +150,7 @@
       <DependentUpon>Dishes.cs</DependentUpon>
     </Compile>
     <Compile Include="Dishes_class.cs" />
+    <Compile Include="DB_Class.cs" />
     <Compile Include="EditAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +170,7 @@
       <DependentUpon>EditIngredient.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee_Class.cs" />
+    <Compile Include="Exception_Class.cs" />
     <Compile Include="Ingredient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +222,7 @@
     <Compile Include="Order_static.Designer.cs">
       <DependentUpon>Order_static.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order_Class.cs" />
     <Compile Include="OverView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,6 +275,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bestseller_static.resx">
       <DependentUpon>Bestseller_static.cs</DependentUpon>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -369,6 +380,8 @@
     <None Include="Resources\Group 90.png" />
     <None Include="Resources\food %282%291.png" />
     <None Include="Resources\food %282%29.png" />
+    <Content Include="Picture\addTable.png" />
+    <Content Include="Qrbank.py" />
     <None Include="Resources\grocery1.png" />
     <None Include="Resources\profile1.png" />
     <None Include="Resources\employee %281%29.png" />

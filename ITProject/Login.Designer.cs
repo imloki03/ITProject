@@ -195,7 +195,7 @@
             this.tb_password.Location = new System.Drawing.Point(597, 289);
             this.tb_password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_password.Name = "tb_password";
-            this.tb_password.PasswordChar = '\0';
+            this.tb_password.PasswordChar = '*';
             this.tb_password.PlaceholderText = "Password";
             this.tb_password.SelectedText = "";
             this.tb_password.Size = new System.Drawing.Size(267, 34);

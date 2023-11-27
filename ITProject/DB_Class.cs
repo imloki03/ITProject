@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsRestaurant
+namespace ITProject
 {
     internal class DB_Class
     {
-        SqlConnection con = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=WinFormRestaurant;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LOKI;Initial Catalog=WinFormRestaurant;Integrated Security=True;Connect Timeout=30;Encrypt=False");
 
         // get the connection
         public SqlConnection getConnection

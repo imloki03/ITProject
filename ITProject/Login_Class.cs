@@ -1,4 +1,5 @@
-﻿using System;
+using ITProject;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -11,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormsRestaurant
+namespace ITProject
 {
     internal class Login_Class
     {
